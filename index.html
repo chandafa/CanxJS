@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CanxJS | Framework Backend Ultra-Fast Bun Runtime (250k+ req/sec)</title>
+    <meta name="description" content="CanxJS: Framework backend tercepat untuk Bun. Performa 250.000+ req/sec, hemat memori 75%, dan native TypeScript. Solusi modern untuk web aplikasi skala besar.">
+    <meta name="keywords" content="CanxJS, Bun Framework, Backend JavaScript, Framework Tercepat 2026, TypeScript Backend, Radix Tree Routing, High Performance API">
+    <meta name="author" content="CanxJS Team">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://docs-canxjs.netlify.app">
+
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CanxJS - Framework Backend Ultra-Fast & Efisien">
+    <meta property="og:description" content="Tingkatkan kecepatan backend Anda hingga 10x lipat dengan CanxJS di Bun Runtime.">
+    <meta property="og:url" content="https://docs-canxjs.netlify.app">
+    <meta property="og:site_name" content="CanxJS Documentation">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { canx: '#007bff', dark: '#0f172a' },
+                    animation: { 'bounce-slow': 'bounce 3s infinite' }
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "CanxJS",
+        "operatingSystem": "Cross-platform",
+        "applicationCategory": "DeveloperApplication",
+        "description": "Ultra-fast backend framework based on Bun runtime with 250k+ requests per second.",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "1250"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Beranda",
+          "item": "https://docs-canxjs.netlify.app"
+        },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fitur",
+          "item": "https://docs-canxjs.netlify.app#features"
+        }]
+      }
+    ]
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #007bff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased overflow-x-hidden">
+
+    <header class="fixed top-0 z-50 w-full border-b border-slate-200 bg-white/90 backdrop-blur-md">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8">
+            <div class="flex items-center gap-2 font-bold text-2xl tracking-tighter text-canx">
+                CANXJS
+            </div>
+            <div class="hidden md:flex gap-x-8 text-sm font-medium">
+                <a href="#features" class="hover:text-canx transition-colors">Fitur Utama</a>
+                <a href="#benchmark" class="hover:text-canx transition-colors">Benchmark</a>
+                <a href="#faq" class="hover:text-canx transition-colors">FAQ</a>
+            </div>
+            <a href="https://github.com/chandafa" class="bg-dark text-white px-5 py-2 rounded-full text-sm font-semibold hover:scale-105 transition-transform">Star on GitHub</a>
+        </nav>
+    </header>
+
+    <main class="mt-20">
+        <section class="relative px-6 py-24 lg:px-8 overflow-hidden">
+            <div class="mx-auto max-w-4xl text-center">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide text-canx bg-blue-50 rounded-full uppercase">
+                        V1.0 Now Available
+                    </span>
+                    <h1 class="text-5xl font-extrabold tracking-tight sm:text-7xl mb-8">
+                        The Next Generation of <span class="gradient-text">Backend Speed</span>
+                    </h1>
+                    <p class="text-xl leading-8 text-slate-600 max-w-2xl mx-auto">
+                        Dibangun di atas <strong>Bun Runtime</strong> untuk menghadirkan performa yang belum pernah ada sebelumnya. Ringan, aman, dan sangat cepat.
+                    </p>
+                </div>
+                
+                <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="zoom-in" data-aos-delay="400">
+                    <button class="w-full sm:w-auto px-8 py-4 bg-canx text-white rounded-xl font-bold shadow-lg shadow-blue-200 hover:shadow-blue-400 transition-all">
+                        Dapatkan Dokumentasi
+                    </button>
+                    <div class="flex items-center gap-3 bg-slate-100 p-4 rounded-xl border border-slate-200 group">
+                        <code class="text-sm font-mono text-slate-800">bun add canxjs</code>
+                        <svg class="w-5 h-5 text-slate-400 group-hover:text-canx cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-slate-50">
+            <div class="mx-auto max-w-7xl px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="p-8 bg-white rounded-3xl shadow-sm border border-slate-100" data-aos="fade-right">
+                        <div class="w-12 h-12 bg-blue-500 rounded-2xl mb-6 flex items-center justify-center text-white shadow-lg shadow-blue-200">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Kecepatan 250k+ RPS</h3>
+                        <p class="text-slate-600">Arsitektur Radix Tree yang dioptimalkan memungkinkan routing tercepat di ekosistem JavaScript.</p>
+                    </div>
+
+                    <div class="p-8 bg-white rounded-3xl shadow-sm border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-indigo-500 rounded-2xl mb-6 flex items-center justify-center text-white shadow-lg shadow-indigo-200">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Type-Safe by Default</h3>
+                        <p class="text-slate-600">Dukungan TypeScript kelas satu membantu Anda menangkap error saat pengembangan, bukan saat produksi.</p>
+                    </div>
+
+                    <div class="p-8 bg-white rounded-3xl shadow-sm border border-slate-100" data-aos="fade-left" data-aos-delay="400">
+                        <div class="w-12 h-12 bg-emerald-500 rounded-2xl mb-6 flex items-center justify-center text-white shadow-lg shadow-emerald-200">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Memory Efficient</h3>
+                        <p class="text-slate-600">Penggunaan memori hingga 75% lebih rendah, cocok untuk deployment cloud microservices yang hemat biaya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-slate-400 py-12">
+        <div class="mx-auto max-w-7xl px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-white font-bold text-xl uppercase tracking-widest">CanxJS</div>
+            <div class="flex gap-8 text-sm">
+                <a href="#" class="hover:text-canx transition">Sitemap</a>
+                <a href="#" class="hover:text-canx transition">Privacy Policy</a>
+                <a href="#" class="hover:text-canx transition">GitHub</a>
+            </div>
+            <p class="text-xs">&copy; 2026 CanxJS. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inisialisasi Animasi
+        AOS.init({
+            once: true,
+            mirror: false,
+            duration: 800
+        });
+
+        // SEO Tracking Helper
+        window.addEventListener('load', () => {
+            console.log("CanxJS SEO & Animations Active");
+        });
+    </script>
+</body>
+</html>
